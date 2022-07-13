@@ -1,6 +1,5 @@
 # (●'◡'●)
 *projeto7-instagramreact*
-Aplicação completa da Home do Instagram! E bibliotecas 🙂
 
 # Bibliotecas
 
