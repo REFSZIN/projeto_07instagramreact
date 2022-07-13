@@ -81,6 +81,9 @@ export const ConteinerMobile = styled.nav`
 }
 `
 export const ConteinerPesquisa = styled.nav`
+@media (max-width: 614px) {
+    display: none;
+}
 `
 export const Input = styled.input`
     width: 215px;
