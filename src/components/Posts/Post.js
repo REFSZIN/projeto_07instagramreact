@@ -1,7 +1,7 @@
 
 import React , {useState} from "react";
 import "./styled.js";
-import {ConteinerPost, Img ,Topo,TitleUsuario,AvatarUser,AcoeStop,Moldura,Imagem,FooterPost,AcoesBtn,Nav,Navi, Curtidas, Texto, ComentsPost, AvatarImage, AvatarName, AvatarComent,ConteinerComment,IconComment,Input,Publish } from "./styled.js";
+import {Avatar, ConteinerPost, Img ,Topo,TitleUsuario,AvatarUser,AcoeStop,Moldura,Imagem,FooterPost,AcoesBtn,Nav,Navi, Curtidas, Texto, ComentsPost, AvatarImage, AvatarName, AvatarComent,ConteinerComment,IconComment,Input,Publish } from "./styled.js";
 
 export default function Post(props){
     const [like, setLike] = useState(0);
@@ -41,9 +41,11 @@ export default function Post(props){
                 </Texto>
                 </Curtidas>
                 <ComentsPost>
-                    <AvatarImage src={props.usercomment} alt="User comment in thats post"/>
-                    <AvatarName>{props.namecomment}</AvatarName>
-                    <AvatarComent>{props.comment}</AvatarComent>
+                    <Avatar>
+                        <AvatarImage src={props.usercomment} alt="User comment in thats post"/>
+                        <AvatarName>{props.namecomment}</AvatarName>
+                        <AvatarComent>{props.comment}</AvatarComent>
+                    </Avatar>
                 </ComentsPost>
                 <ConteinerComment>
                     <IconComment><ion-icon className="emotions" name="happy-outline"></ion-icon></IconComment>

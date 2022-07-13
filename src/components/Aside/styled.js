@@ -107,3 +107,8 @@ export const Seguir = styled.div`
     font-weight: 600;
     cursor: pointer;
 `
+export const UnSeguir = styled.div`
+    color: #323232;
+    font-weight: 600;
+    cursor: pointer;
+`

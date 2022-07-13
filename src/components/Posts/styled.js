@@ -135,6 +135,7 @@ export const ComentsPost = styled.section`
     display: flex;
     justify-content: start;
     align-items: flex-start;
+    flex-direction: column;
 `
 export const AvatarImage = styled.img`
     border-radius: 100px;
@@ -205,4 +206,10 @@ export const Publish = styled.button`
     opacity: 0.7;
     transition: opacity 0.3s ease-in-out;
     }
+`
+export const Avatar = styled.div`
+    margin-top: 5px;
+    margin-left:4px;
+    display: flex;
+    height: 30px;
 `
