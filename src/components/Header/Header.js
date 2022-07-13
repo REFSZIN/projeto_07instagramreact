@@ -2,21 +2,22 @@ import React from "react";
 import "./styled.js";
 import {Heade,Logu,Conteiner,ConteinerLogo,Hr,ConteinerMobileLogo,ConteinerMobile,ConteinerPesquisa , Input, ConteinerIcons,  ConteinerIconsMobile  } from "./styled.js";
 import { logo } from "../../assets/data/indexdata";
+import { Link } from "react-router-dom";
 
 export default function Header () {
     return (
         <Heade>
             <Conteiner>
                 <ConteinerLogo>
-                    <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
                     <Hr/>
-                    <Logu src={logo.img} alt="Logo"/>
+                    <Link to="/curiosod+"><Logu src={logo.img} alt="Logo"/></Link>
                 </ConteinerLogo>
                 <ConteinerMobileLogo>
-                    <ion-icon name="logo-instagram"></ion-icon>
+                <Link to="/"><ion-icon name="logo-instagram"></ion-icon></Link>
                 </ConteinerMobileLogo>
                 <ConteinerMobile>
-                    <Logu src={logo.img} alt="Logo"/>
+                    <Link to="/"><Logu src={logo.img} alt="Logo"/></Link>
                 </ConteinerMobile>
                 <ConteinerPesquisa>
                     <Input type="text" placeholder="Pesquisar"/>

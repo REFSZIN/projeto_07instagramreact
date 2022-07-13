@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Foter = styled.footer`
     display: none;
+    z-index: 1;
 @media (max-width: 935px) {
 
     }

@@ -9,6 +9,7 @@ export const ConteinerPost = styled.article`
     display: flex;
     flex-direction: column;
     margin-top: 18px;
+    border-radius: 12px;
 @media (max-width: 614px) {
     border-radius: 0;
     border-left: none;
@@ -63,13 +64,31 @@ export const AcoeStop = styled.div`
     cursor: pointer;
 `
 export const Moldura = styled.div`
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+& ion-icon{
+    padding: 10px;
+    left: -164px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 170px;
+    animation: heartBeat 1.5s ;
+    @media (max-width: 935px) {
+        margin-left: 140px;
+        width: 100%;
+        height: 120px;
+}
+}
 `
 export const Imagem = styled.img`
     width: 100%;
+    position: relative;
     cursor: pointer;
 `
 export const FooterPost = styled.section`
+
 `
 export const AcoesBtn = styled.section`
     display: flex;
@@ -172,7 +191,7 @@ export const Input = styled.input`
     height: 40px;
 `
 export const Publish = styled.button`
-    background-color: white;
+    background-color:#FAFAFA;
     margin-left: 10px;
     width: 80px;
     height: 40px;

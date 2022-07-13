@@ -15,9 +15,14 @@ export default function Post(props){
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </AcoeStop>
             </Topo>
-            <Moldura>
-                <Imagem onClick={() => setLike(1)} src={props.conteudo} alt="img"/>
-            </Moldura>
+            {like ? (<Moldura>
+                        <ion-icon id="liked" className=" md hydrated" onClick={() => setLike(!like)} name="heart" aria-label="heart" ></ion-icon>
+                        <Imagem src={props.conteudo} alt="img" onClick={() => setLike(!like)}/>
+                    </Moldura>)
+                    :
+                    (<Moldura>
+                        <Imagem onClick={() => setLike(1)} src={props.conteudo} alt="img"/>
+                    </Moldura>)}
             <FooterPost>
                 <AcoesBtn>
                     <Nav>

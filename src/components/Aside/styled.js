@@ -80,6 +80,7 @@ export const Img = styled.img`
     width: 56px;
     height: 56px;
     border-radius: 50%;
+    
 `
 export const SugeText = styled.div`
     margin-left: 10px;
