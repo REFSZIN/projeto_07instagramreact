@@ -120,7 +120,6 @@ export const Curtidas = styled.section`
 export const Texto = styled.div`
     display: inline;
     flex-direction: column;
-    margin-left: 14px;
     font-weight: 300;
     color: #8E8E8E;
     & strong{
@@ -190,6 +189,9 @@ export const Input = styled.input`
     border-radius: 12px;
     width: 75%;
     height: 40px;
+    &::placeholder{
+        padding: 10px;
+    }
 `
 export const Publish = styled.button`
     background-color:#FAFAFA;
@@ -201,6 +203,7 @@ export const Publish = styled.button`
     font-size: 15px;
     font-style: bold;
     line-height: 14px;
+    border-radius: 20px;
     &:hover{
     cursor: pointer;
     opacity: 0.7;

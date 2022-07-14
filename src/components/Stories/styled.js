@@ -30,6 +30,9 @@ export const Setinha = styled.div`
     color: #FFF;
     font-size: 28px;
     cursor: pointer;
+    @media (max-width: 614px) {
+    display: none;
+}
 `
 export const NameUser = styled.figcaption`
     width: 66px;

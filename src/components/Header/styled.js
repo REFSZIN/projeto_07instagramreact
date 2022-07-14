@@ -25,9 +25,15 @@ export const Heade = styled.header`
     align-items: center;
     height: 100%;
 }
-@media (max-width: 935px) {
+@media (max-width: 614px) {
     padding: 0 20px;
     justify-content: space-around;
+    & ion-icon:first-child{
+        margin-right: 20px;
+    }
+    & ion-icon:last-child{
+        margin-left: 30px;
+    }
 }
 `
 export const Conteiner = styled.section`
@@ -72,12 +78,15 @@ export const ConteinerMobileLogo = styled.nav`
 `
 export const ConteinerMobile = styled.nav`
     display: none;
-    
+    & img{
+        margin-left: 20px;
+    }
 @media (max-width: 614px) {
     display: flex;
     height: 30px;
     position: relative;
     top: 3px;
+    margin-right: 20px;
 }
 `
 export const ConteinerPesquisa = styled.nav`
@@ -112,6 +121,7 @@ export const ConteinerIconsMobile = styled.nav`
 }
 @media (max-width: 614px) {
     display: flex;
+    margin-right: 20px;
 }`
 
 export const Logu = styled.img`
