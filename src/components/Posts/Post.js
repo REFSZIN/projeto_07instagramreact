@@ -16,7 +16,7 @@ export default function Post(props){
             </AcoeStop>
             </Topo>
             {like ? (<Moldura>
-                        <ion-icon id="liked" className=" md hydrated" onClick={() => setLike(!like)} name="heart" aria-label="heart" ></ion-icon>
+                        <ion-icon id="liked" className="md hydrated" onClick={() => setLike(!like)} name="heart" aria-label="heart" ></ion-icon>
                         <Imagem src={props.conteudo} alt="img" onClick={() => setLike(!like)}/>
                     </Moldura>)
                     :
@@ -26,7 +26,7 @@ export default function Post(props){
             <FooterPost>
                 <AcoesBtn>
                     <Nav>
-                        {like ? (<ion-icon id="liked" className=" md hydrated" onClick={() => setLike(!like)} name="heart" aria-label="heart" ></ion-icon>):(<ion-icon className="md hydrated" onClick={() => setLike(!like)} name="heart-outline"></ion-icon>)}
+                        {like ? (<ion-icon id="liked" className="md hydrated" onClick={() => setLike(!like)} name="heart" aria-label="heart" ></ion-icon>):(<ion-icon className="md hydrated" onClick={() => setLike(!like)} name="heart-outline"></ion-icon>)}
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </Nav>
